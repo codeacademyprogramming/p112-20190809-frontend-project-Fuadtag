@@ -1,0 +1,185 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .col-4,
+    .col-7 {
+        padding: 0 !important;
+    }
+    
+    .color-orange {
+        color: #ff3115;
+    }
+    
+    .color-darkorange {
+        color: #E41F05
+    }
+    
+    .color-dark {
+        color: #111111;
+    }
+    
+    .social-icons {
+        margin-right: 10px
+    }
+    
+    .social-icons i {
+        color: #888888;
+        cursor: pointer;
+    }
+    
+    .social-icons i:hover {
+        color: #b1b1b1;
+    }
+    
+    .header-nav {
+        background-color: #111111
+    }
+    
+    .header-nav {
+        .container .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            div {
+                display: flex;
+                i {
+                    margin: 0 5px
+                }
+                a {
+                    margin-left: 5px;
+                    font-size: 14px;
+                    color: #E41F05;
+                }
+                a:hover {
+                    color: #ff3115;
+                }
+                p {
+                    color: white;
+                    font-size: 14px
+                }
+            }
+        }
+    }
+    
+    .main-nav {
+        .row {
+            padding: 35px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-contact {
+            display: flex;
+            p {
+                color: #888888;
+                font-weight: lighter;
+            }
+            h4 {
+                margin-bottom: 5px
+            }
+            div {
+                margin-right: 8px;
+                margin-left: 5px;
+            }
+            i {
+                font-size: 40px;
+                color: #ff3115;
+            }
+            .contact-mail {
+                cursor: pointer;
+            }
+            .contact-mail:hover p {
+                color: #ff3115;
+            }
+        }
+    }
+    
+    .nav-logo {
+        a {
+            color: black;
+            // display: flex;
+        }
+        i {
+            color: #ff3115;
+            font-size: 40px;
+            margin-right: 5px;
+        }
+        span {
+            font-size: 30px;
+            padding-top: 4px;
+        }
+    }
+    
+    .header-phone {
+        display: flex;
+        i {
+            font-size: 40px;
+            color: #ff3115;
+            margin: 0 15px;
+        }
+        p {
+            color: #888888
+        }
+    }
+    
+    .header-phone {
+        .header-phone-text:hover p {
+            color: #ff3115;
+        }
+    }
+    
+    .header-phone {
+        .header-phone-text {
+            cursor: pointer;
+        }
+    }
+    
+    .footer-nav {
+        background-color: #111111;
+        ;
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            li {
+                a {
+                    color: #888888;
+                    padding: 19px 0;
+                }
+            }
+            li:first-child a {
+                color: #ff3115;
+            }
+            a {
+                text-transform: uppercase;
+            }
+            a:hover {
+                color: #ff3115;
+            }
+        }
+        .footer-nav-icons {
+            display: flex;
+            i {
+                color: white;
+                padding: 14px
+            }
+            i:first-child {
+                background-color: #E41F05;
+            }
+            i:last-child {
+                background-color: #ff3115;
+            }
+        }
+    }

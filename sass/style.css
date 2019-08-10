@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.col-4,
+.col-7 {
+  padding: 0 !important;
+}
+
+.color-orange {
+  color: #ff3115;
+}
+
+.color-darkorange {
+  color: #E41F05;
+}
+
+.color-dark {
+  color: #111111;
+}
+
+.social-icons {
+  margin-right: 10px;
+}
+
+.social-icons i {
+  color: #888888;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: #b1b1b1;
+}
+
+.header-nav {
+  background-color: #111111;
+}
+
+.header-nav .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+}
+
+.header-nav .container .row div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-nav .container .row div i {
+  margin: 0 5px;
+}
+
+.header-nav .container .row div a {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #E41F05;
+}
+
+.header-nav .container .row div a:hover {
+  color: #ff3115;
+}
+
+.header-nav .container .row div p {
+  color: white;
+  font-size: 14px;
+}
+
+.main-nav .row {
+  padding: 35px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-nav .header-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-nav .header-contact p {
+  color: #888888;
+  font-weight: lighter;
+}
+
+.main-nav .header-contact h4 {
+  margin-bottom: 5px;
+}
+
+.main-nav .header-contact div {
+  margin-right: 8px;
+  margin-left: 5px;
+}
+
+.main-nav .header-contact i {
+  font-size: 40px;
+  color: #ff3115;
+}
+
+.main-nav .header-contact .contact-mail {
+  cursor: pointer;
+}
+
+.main-nav .header-contact .contact-mail:hover p {
+  color: #ff3115;
+}
+
+.nav-logo a {
+  color: black;
+}
+
+.nav-logo i {
+  color: #ff3115;
+  font-size: 40px;
+  margin-right: 5px;
+}
+
+.nav-logo span {
+  font-size: 30px;
+  padding-top: 4px;
+}
+
+.header-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-phone i {
+  font-size: 40px;
+  color: #ff3115;
+  margin: 0 15px;
+}
+
+.header-phone p {
+  color: #888888;
+}
+
+.header-phone .header-phone-text:hover p {
+  color: #ff3115;
+}
+
+.header-phone .header-phone-text {
+  cursor: pointer;
+}
+
+.footer-nav {
+  background-color: #111111;
+}
+
+.footer-nav .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-nav ul li a {
+  color: #888888;
+  padding: 19px 0;
+}
+
+.footer-nav ul li:first-child a {
+  color: #ff3115;
+}
+
+.footer-nav ul a {
+  text-transform: uppercase;
+}
+
+.footer-nav ul a:hover {
+  color: #ff3115;
+}
+
+.footer-nav .footer-nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-nav .footer-nav-icons i {
+  color: white;
+  padding: 14px;
+}
+
+.footer-nav .footer-nav-icons i:first-child {
+  background-color: #E41F05;
+}
+
+.footer-nav .footer-nav-icons i:last-child {
+  background-color: #ff3115;
+}
+/*# sourceMappingURL=style.css.map */
