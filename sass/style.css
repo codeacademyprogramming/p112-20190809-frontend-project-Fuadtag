@@ -613,4 +613,71 @@ nav .footer-nav .about:hover .about-dropdown {
 .footer-nav .container .row .col-7 a:hover {
   color: #ff3115;
 }
+
+/*Main*/
+#section-carousel .col-12 .slide {
+  width: 100%;
+  height: 100%;
+}
+
+#section-carousel .owl-carousel .owl-theme .slide {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#section-carousel .item {
+  position: relative;
+}
+
+#section-carousel .intro-text {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+}
+
+#section-carousel .intro-text p {
+  margin: 10px 0;
+}
+
+#section-carousel .intro-text h1 {
+  font-size: 50px;
+}
+
+.buttons button {
+  font-size: 20px;
+  color: white;
+  padding: 15px 40px;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+}
+
+.buttons button:last-child {
+  background-color: #ff3115;
+  margin-left: 40px;
+}
+
+#section-info-cards {
+  z-index: 10;
+  height: 50vh;
+}
+
+#section-info-cards .row .col-3 {
+  color: white;
+}
+
+#section-info-cards .row .div-icon {
+  background-color: #111111;
+  border-radius: 50%;
+  padding: 40px;
+}
+
+#section-info-cards .row .div-icon i {
+  color: #ff3115;
+  font-size: 40px;
+}
 /*# sourceMappingURL=style.css.map */
