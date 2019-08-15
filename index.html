@@ -7,102 +7,221 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Edulearn | Responsive Education HTML5 Template</title>
     <link rel="icon" href="images/download.png" type="image/x-icon">
+    <link rel="stylesheet" href="sass/bootstrap-grid.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css">
-    <link rel="stylesheet" href="sass/bootstrap-grid.min.css">
+
 </head>
 
 <body>
+
     <header>
-        <nav>
-            <div class="header-nav">
 
-                <div class="container ">
-                    <div class="row">
-                        <div>
-                            <i class="fas fa-university color-orange"></i>
-                            <p>Welcome to Edulearn</p>
+        <div class="header-nav">
+
+            <div class="container ">
+                <div class="row">
+                    <div>
+                        <i class="fas fa-university color-orange"></i>
+                        <p>Welcome to Edulearn</p>
+                    </div>
+
+                    <div>
+                        <div class="social-icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                            <i class="fab fa-linkedin"></i>
                         </div>
-
                         <div>
-                            <div class="social-icons">
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-google-plus-g"></i>
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                            <div>
-                                <a href="#">Apply Now</a>
-                            </div>
+                            <a href="#">Apply Now</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="main-nav">
-                <div class="container">
-                    <div class="row">
-                        <div class="header-contact col-4">
-                            <div>
-                                <i class="fas fa-envelope-open-text"></i>
-                            </div>
-                            <div class="contact-mail">
-                                <h4>Mail Us</h4>
-                                <p>info@domain.com</p>
-                            </div>
+        </div>
+        <div class="main-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="header-contact col-4">
+                        <div>
+                            <i class="fas fa-envelope-open-text"></i>
                         </div>
-                        <div class="nav-logo col-4">
-                            <div>
-                                <a href="#">
-                                    <i class="fas fa-graduation-cap"></i>
-                                    <span>Edulearn.</span>
-                                </a>
-                            </div>
+                        <div class="contact-mail">
+                            <h4>Mail Us</h4>
+                            <p>info@domain.com</p>
                         </div>
-                        <div class="header-phone">
-                            <div>
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="header-phone-text">
-                                <span>
+                    </div>
+                    <div class="nav-logo col-4">
+                        <div>
+                            <a href="#">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Edulearn.</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-phone">
+                        <div>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="header-phone-text">
+                            <span>
                                     <strong>
                                         Call Us
                                 </strong>
                             </span>
-                                <p>+1234-567-890</p>
-                            </div>
+                            <p>+1234-567-890</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <nav>
             <div class="footer-nav">
                 <div class="container">
                     <div class="row">
                         <div class="col-7">
+                            <ul class="home">
+                                <li><a class="navbar-items home-button" href="#">Home</a></li>
+                                <ul class="home-dropdown col-5 p-a">
+                                    <li><a class="dropdown-items" href="#">Home One</a></li>
+                                    <li><a class="dropdown-items" href="#">Home Two</a></li>
+                                    <li><a class="dropdown-items" href="#">Home Three</a></li>
+                                    <li><a class="dropdown-items" href="#">Home Four</a></li>
+                                    <li><a class="dropdown-items" href="#">Home Five</a></li>
+                                    <li><a class="dropdown-items" href="#">Home Instructor</a>
+
+                                </ul>
+
+                            </ul>
+                            <ul class="about">
+                                <li><a class="navbar-items p-r" href="#">About us</a></li>
+                                <ul class="about-dropdown col-5 p-a">
+                                    <li><a href="#">About one</a></li>
+                                    <li><a href="#">About two</a></li>
+                                    <li><a href="#">About three</a></li>
+                                </ul>
+                            </ul>
+                            <ul class="mega-hover">
+                                <li><a class="navbar-items mega" href="#">Mega</a></li>
+                                <div class="mega-dropdown col-12">
+                                    <ul class="col-3">
+                                        <li><a href="#">About one</a></li>
+                                        <li><a href="#">About two</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Blog Details</a></li>
+                                    </ul>
+                                    <ul class="col-3">
+                                        <li><a href="#">Teachers</a></li>
+                                        <li><a href="#">Teachers without filter</a></li>
+                                        <li><a href="#">Teachers Single</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                    <ul class="col-3">
+                                        <li><a href="#">Gallery One</a></li>
+                                        <li><a href="#">Gallery Two</a></li>
+                                        <li><a href="#">Gallery Three</a></li>
+                                        <li><a href="#">Error 404</a></li>
+                                    </ul>
+                                    <ul class="col-3">
+                                        <li><a href="#">Shop</a></li>
+                                        <li><a href="#">Shop Details</a></li>
+                                        <li><a href="#">Cart</a></li>
+                                        <li><a href="#">Checkout</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                            <ul class="courses-hover">
+                                <li><a class="navbar-items courses" href="#">Courses</a></li>
+                                <ul class="courses-dropdown">
+
+                                    <li><a href="#">Courses One</a></li>
+                                    <li><a href="#">Courses Two</a></li>
+                                    <li><a href="#">Courses Details</a></li>
+                                    <li><a href="#">Courses Details2</a></li>
+
+                                </ul>
+                            </ul>
+                            <ul class="events-hover">
+                                <li><a class="navbar-items event" href="#">Events</a></li>
+                                <ul class="events-dropdown">
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Events Details</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </ul>
+                            <ul class="page-hover">
+                                <li><a class="navbar-items page" href="#">Page</a></li>
+                                <ul class="pages-dropdown">
+                                    <li class="teachers"><a href="#">Teachers</a>
+                                        <ul class="teachers-dropdown">
+                                            <li><a href="#">Teachers</a></li>
+                                            <li><a href="#">Teachers without filter</a></li>
+                                            <li><a href="#">Teachers single</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="gallery"><a href="#">Gallery</a>
+                                        <ul class="gallery-dropdown">
+                                            <li><a href="#">Gallery one</a></li>
+                                            <li><a href="#">Gallery two</a></li>
+                                            <li><a href="#">Gallery three</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="shop"><a href="#">Shop</a>
+                                        <ul class="shop-dropdown">
+                                            <li><a href="#">Shop</a></li>
+                                            <li><a href="#">Shop details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Cart</a></li>
+
+                                    <li><a href="#">Checkout</a></li>
+                                    <li><a href="#">Error 404</a></li>
+                                </ul>
+                            </ul>
+                            <ul class="blog-hover">
+                                <li><a class="navbar-items" href="#">Blog</a></li>
+                                <ul class="blog-dropdown">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Blog Details</a></li>
+                                </ul>
+                            </ul>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Mega</a></li>
-                                <li><a href="#">Courses</a></li>
-                                <li><a href="#">Events</a></li>
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a class="navbar-items" href="#">Contact</a></li>
+                            </ul>
                             </ul>
                         </div>
                         <div class="footer-nav-icons">
-                            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="#"><i class="fas fa-search search-button"></i></a>
                             <a href="#"><i class="fas fa-bars"></i></a>
                         </div>
+
                     </div>
+
                 </div>
+
+
             </div>
+
+
         </nav>
+
+
     </header>
     <main></main>
     <footer></footer>
 
+    <div class="modal">
+        <i class="far fa-times-circle close-circle"></i>
+        <div class="modal-content">
+            <input type="text" placeholder="eg:Computer Technology">
 
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f28891363d.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
