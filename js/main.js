@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('.slide').owlCarousel({
         loop: true,
         dots: true,
-        nav: false,
+        nav: true,
         navSpeed: 800,
         autoplay: true,
         transitionStyle: "fade",
@@ -37,7 +37,7 @@ $(document).ready(function() {
         acc[i].addEventListener("click", function() {
 
             this.classList.toggle("active");
-            // this.classList.toggle(".accordion-color");
+            this.classList.toggle(".accordion-color");
 
 
 
@@ -55,6 +55,15 @@ $(document).ready(function() {
     // $(".accordion").click(function() {
     //     $(".accordion").classname.toggle(".accordion-color")
     // })
+    // $({ Counter: 0 }).animate({
+    //     Counter: $('.p-counter').text()
+    //   }, {
+    //     duration: 1000,
+    //     easing: 'swing',
+    //     step: function() {
+    //       $('.p-counter').text(Math.ceil(this.Counter));
+    //     }
+    //   });
 
 
 

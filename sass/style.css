@@ -14,6 +14,12 @@
   color: #ff3115;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 a {
   text-decoration: none;
 }
@@ -709,8 +715,8 @@ nav .footer-nav .about:hover .about-dropdown {
 
 #section-info-cards .row .col-3:hover i {
   color: white;
-  -webkit-animation: scale 2s;
-          animation: scale 2s;
+  -webkit-animation: scale 1s;
+          animation: scale 1s;
 }
 
 #section-info-cards .row .col-3:hover .div-icons {
@@ -853,9 +859,14 @@ nav .footer-nav .about:hover .about-dropdown {
   text-align: left;
   border: none;
   outline: none;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
   margin: 10px 0;
+}
+
+#section-aboutus .div-row-info-text .active {
+  background-color: #ff3115;
+  color: white;
 }
 
 #section-aboutus .div-row-info-text .panel {
@@ -872,5 +883,416 @@ nav .footer-nav .about:hover .about-dropdown {
 .accordion-color {
   color: white;
   background-color: #ff3115;
+}
+
+#popular-courses {
+  background-color: #f9f9f9;
+}
+
+#popular-courses .row {
+  position: relative;
+}
+
+#popular-courses .row .owl-prev i {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -50px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: white;
+  background-color: #444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#popular-courses .row .owl-next i {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -50px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: white;
+  background-color: #444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#popular-courses .row:hover i {
+  opacity: 1;
+}
+
+#popular-courses .owl-prev i:hover {
+  background-color: #ff3115;
+}
+
+#popular-courses .owl-next i:hover {
+  background-color: #ff3115;
+}
+
+#popular-courses .popular-courses-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15px;
+}
+
+#popular-courses .popular-courses-header p {
+  margin: 15px 0;
+}
+
+#popular-courses .popular-courses-header hr {
+  width: 10%;
+  border-color: #ff3115;
+}
+
+#popular-courses .card {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 15px;
+}
+
+#popular-courses .card .div-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+#popular-courses .card .div-body a:first-child {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #ff3115;
+}
+
+#popular-courses .card .div-body a:nth-child(2) {
+  color: black;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+#popular-courses .card .div-body .card-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#popular-courses .card .div-body .card-rating ul {
+  margin-right: 20px;
+}
+
+#popular-courses .card .div-body .card-rating ul li {
+  color: #ff3115;
+}
+
+#popular-courses .card .div-body p {
+  text-align: center;
+  color: #888888;
+  margin-top: 15px;
+}
+
+#popular-courses .card .course-footer {
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#popular-courses .card .course-footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#popular-courses .card .course-footer div span:first-child {
+  font-weight: bold;
+}
+
+#popular-courses .card .course-footer div span:nth-child(2) {
+  font-size: 15px;
+}
+
+#popular-courses .card .course-value {
+  position: absolute;
+  bottom: -25px;
+  right: 25px;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #ff3115;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#section-acheivements {
+  background-image: url(../images/counter-bg.jpg);
+}
+
+#section-acheivements .container .div-row-acheivements {
+  padding: 130px 0;
+}
+
+#section-acheivements .container .div-row-acheivements .div-acheivements h2 {
+  color: white;
+  font-size: 32px;
+}
+
+#section-acheivements .container .div-row-acheivements .div-acheivements p {
+  color: #888888;
+  margin: 30px 0;
+}
+
+#section-acheivements .container .div-row-acheivements .div-acheivements img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#section-acheivements .container .div-row-acheivements .div-counters {
+  padding-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#section-acheivements .container .div-row-acheivements .div-counters .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#section-acheivements .container .div-row-acheivements .div-counters p {
+  color: white;
+  font-size: 25px;
+}
+
+#section-acheivements .container .div-row-acheivements .div-counters .col-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border: 1px solid #888888;
+  height: 150px;
+}
+
+#section-acheivements .container .div-row-acheivements .div-counters .col-6:hover {
+  border-color: #ff3115;
+}
+
+#section-events .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+
+#section-events .row .events-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-events .row .events-header h2 {
+  font-size: 25px;
+}
+
+#section-events .row .events-header p {
+  color: #888888;
+  margin: 15px 0;
+}
+
+#section-events .row .events-header hr {
+  border-color: #ff3115;
+  width: 10%;
+}
+
+#section-events .row i {
+  color: #ff3115;
+  font-size: 14px;
+}
+
+#section-events .row .card {
+  margin: 0 5px;
+}
+
+#section-events .row .card-text {
+  background-color: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 15px 10px;
+}
+
+#section-events .row .card-text i {
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-events .row .card-text .event-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+#section-events .row .card-text .first-a {
+  color: #111111;
+  margin-top: 15px;
+  font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#section-events .row .card-text .first-a:hover {
+  color: #ff3115;
+}
+
+#section-events .row .card-text .card-body-clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+}
+
+#section-events .row .card-text .card-body-clock div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+#section-events .row .card-text .card-body-clock div:first-child {
+  margin-right: 10px;
+}
+
+#section-events .row .card-text .footer-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-events .row .card-text .footer-button a {
+  margin-right: 5px;
+  color: #ff3115;
+}
+
+#section-events .row p,
+#section-events .row span {
+  color: #888888;
+  font-size: 15px;
 }
 /*# sourceMappingURL=style.css.map */
