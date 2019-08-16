@@ -9,6 +9,18 @@ $(document).ready(function() {
     })
 
 
+    $(window).on("scroll", function() {
+        let navbar = $(nav);
+        let win = $(window);
+        let scroll = win.scrollTop();
+        if (scroll < 300) {
+
+            navbar.removeClass("sticky");
+        } else {
+            navbar.addClass("sticky");
+        }
+    })
+
     $('.slide').owlCarousel({
         loop: true,
         dots: true,

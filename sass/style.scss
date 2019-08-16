@@ -9,6 +9,14 @@
     color: #ff3115;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
 .flex {
     display: flex;
 }
@@ -683,8 +691,8 @@ nav {
     background-color: #ff3115;
 }
 
-#popular-courses,
-{
+#popular-courses {
+    padding: 70px 0;
     .row {
         position: relative;
         .owl-prev i {
@@ -743,6 +751,9 @@ nav {
             width: 10%;
             border-color: #ff3115;
         }
+        h2 {
+            font-size: 30px;
+        }
     }
     background-color: #f9f9f9;
     .card {
@@ -751,7 +762,7 @@ nav {
         flex-direction: column;
         justify-content: center;
         margin: 0 15px;
-        // box-shadow: rgba(0, 0, 0, 0.37) 1px;
+        box-shadow: 2px rgba(0, 0, 0, 0.24);
         .div-body {
             display: flex;
             flex-direction: column;
@@ -787,16 +798,22 @@ nav {
             padding: 15px 20px;
             display: flex;
             justify-content: space-between;
+            background-color: #f0f0f0;
             div {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                border-right: 1px solid #b3b3b3;
+                padding-right: 5px;
                 span:first-child {
                     font-weight: bold;
                 }
                 span:nth-child(2) {
                     font-size: 15px;
                 }
+            }
+            div:last-child {
+                border: none;
             }
         }
         .course-value {
@@ -820,6 +837,7 @@ nav {
 
 #section-acheivements {
     background-image: url(../images/counter-bg.jpg);
+    background-attachment: fixed;
     .container {
         .div-row-acheivements {
             padding: 130px 0;
@@ -947,4 +965,108 @@ nav {
     }
 }
 
-#section-experienced-staff {}
+#section-experienced-staff {
+    margin-top: 120px;
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+    .staff-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 0;
+        h2 {
+            font-size: 25px;
+        }
+        p {
+            color: #888888;
+            margin: 15px 0;
+        }
+        hr {
+            border-color: #ff3115;
+            width: 10%;
+        }
+    }
+    .staff {
+        position: relative;
+        margin: 0 8px;
+        .staff-overlay {
+            opacity: 0;
+            transition: 2s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.589);
+            color: white;
+            cursor: pointer;
+            hr {
+                width: 13%;
+                border-color: #ff3115;
+                margin-top: 10px;
+            }
+            p {
+                margin-top: 13px;
+            }
+        }
+    }
+    .staff:hover .staff-overlay {
+        opacity: 1;
+    }
+    .staff:hover .staff-info {
+        opacity: 0;
+    }
+    .staff-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.589);
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+#section-devlopment-course {
+    background-image: url(../images/cta-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+    padding: 60px 0;
+    .container {
+        padding: 60px 0;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            padding: 20px 0;
+        }
+        button {
+            font-size: 18px;
+            color: white;
+            background-color: #ff3115;
+            border: none;
+            padding: 15px 60px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        hr {
+            margin-bottom: 30px;
+            width: 12%;
+            border-color: #ff3115;
+        }
+    }
+}
