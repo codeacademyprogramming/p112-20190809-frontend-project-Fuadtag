@@ -9,22 +9,22 @@ $(document).ready(function() {
     })
 
 
-    $(window).on("scroll", function() {
-        let navbar = $(nav);
-        let win = $(window);
-        let scroll = win.scrollTop();
-        if (scroll < 300) {
+    // $(window).on("scroll", function() {
+    //     let navbar = $(nav);
+    //     let win = $(window);
+    //     let scroll = win.scrollTop();
+    //     if (scroll < 300) {
 
-            navbar.removeClass("sticky");
-        } else {
-            navbar.addClass("sticky");
-        }
-    })
+    //         navbar.removeClass("sticky");
+    //     } else {
+    //         navbar.addClas("sticky");
+    //     }s
+    // })
 
     $('.slide').owlCarousel({
         loop: true,
         dots: true,
-        nav: true,
+        nav: false,
         navSpeed: 800,
         autoplay: true,
         transitionStyle: "fade",
@@ -64,18 +64,18 @@ $(document).ready(function() {
             }
         });
     }
-    // $(".accordion").click(function() {
-    //     $(".accordion").classname.toggle(".accordion-color")
-    // })
-    // $({ Counter: 0 }).animate({
-    //     Counter: $('.p-counter').text()
-    //   }, {
-    //     duration: 1000,
-    //     easing: 'swing',
-    //     step: function() {
-    //       $('.p-counter').text(Math.ceil(this.Counter));
-    //     }
-    //   });
+    $(".accordion").click(function() {
+            $(".accordion").classname.toggle(".accordion-color")
+        })
+        // $({ Counter: 0 }).animate({
+        //     Counter: $('.p-counter').text()
+        // }, {
+        //     duration: 1000,
+        //     easing: 'swing',
+        //     step: function() {
+        //         $('.p-counter').text(Math.ceil(this.Counter));
+        //     }
+        // });
 
 
 
