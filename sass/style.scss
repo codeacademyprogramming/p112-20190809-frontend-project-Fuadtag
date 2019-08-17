@@ -1107,12 +1107,13 @@ nav {
     .news-card-lg {
         transition: 0.5s;
         cursor: pointer;
-        height: 500px;
         display: flex;
         flex-direction: column;
         border: 1px solid #cccccc;
-        justify-content: space-around;
+        justify-content: space-between;
+        height: 558px;
         .news-image {
+            padding-top: 15px;
             text-align: center;
         }
         p {
@@ -1153,6 +1154,9 @@ nav {
         display: flex;
         border: 1px solid #cccccc;
         padding: 0;
+        margin: 15px 0;
+        cursor: pointer;
+        transition: 0.5s;
         img {
             max-width: 100%;
         }
@@ -1181,6 +1185,86 @@ nav {
         p {
             color: #5c5c5c;
             line-height: 25px;
+        }
+    }
+    .news-card-sm:hover {
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+}
+
+#section-publications {
+    background-color: #f0f0f0;
+    .row-publications-header {
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+            font-weight: bold;
+            font-size: 30px;
+        }
+        p {
+            color: #888888;
+            margin: 15px 0;
+        }
+        hr {
+            border-color: #E41F05;
+            width: 15%;
+        }
+    }
+    .owl-carousel {
+        .publication-carousel-item {
+            background-color: white;
+            padding-right: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                cursor: pointer;
+            }
+            img:hover {
+                scale: 1.5;
+            }
+            h3 {
+                padding: 10px 0;
+                font-size: 20px;
+            }
+            p {
+                color: #888888;
+            }
+            a {
+                color: #3a3a3a;
+                border: 1px solid #888888;
+                padding: 5px 15px;
+                margin: 15px 0;
+                transition: 0.5s;
+            }
+            a:hover {
+                background-color: rgb(252, 36, 8);
+                color: white;
+                border: none;
+            }
+        }
+        .publication-carousel-item:hover {
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+        }
+    }
+    .view-more-button {
+        padding-top: 30px;
+        padding-bottom: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .view-more {
+            color: white;
+            padding: 10px 20px;
+            background-color: rgb(255, 55, 29);
+            transition: 0.5s;
+        }
+        .view-more:hover {
+            background-color: #cc2712;
         }
     }
 }

@@ -1528,7 +1528,6 @@ nav .footer-nav .about:hover .about-dropdown {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
-  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1537,11 +1536,14 @@ nav .footer-nav .about:hover .about-dropdown {
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid #cccccc;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 558px;
 }
 
 #section-news .news-card-lg .news-image {
+  padding-top: 15px;
   text-align: center;
 }
 
@@ -1592,6 +1594,10 @@ nav .footer-nav .about:hover .about-dropdown {
   display: flex;
   border: 1px solid #cccccc;
   padding: 0;
+  margin: 15px 0;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #section-news .news-card-sm img {
@@ -1631,5 +1637,127 @@ nav .footer-nav .about:hover .about-dropdown {
 #section-news .news-card-sm p {
   color: #5c5c5c;
   line-height: 25px;
+}
+
+#section-news .news-card-sm:hover {
+  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+#section-publications {
+  background-color: #f0f0f0;
+}
+
+#section-publications .row-publications-header {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#section-publications .row-publications-header h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#section-publications .row-publications-header p {
+  color: #888888;
+  margin: 15px 0;
+}
+
+#section-publications .row-publications-header hr {
+  border-color: #E41F05;
+  width: 15%;
+}
+
+#section-publications .owl-carousel .publication-carousel-item {
+  background-color: white;
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-publications .owl-carousel .publication-carousel-item img {
+  cursor: pointer;
+}
+
+#section-publications .owl-carousel .publication-carousel-item img:hover {
+  scale: 1.5;
+}
+
+#section-publications .owl-carousel .publication-carousel-item h3 {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+#section-publications .owl-carousel .publication-carousel-item p {
+  color: #888888;
+}
+
+#section-publications .owl-carousel .publication-carousel-item a {
+  color: #3a3a3a;
+  border: 1px solid #888888;
+  padding: 5px 15px;
+  margin: 15px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#section-publications .owl-carousel .publication-carousel-item a:hover {
+  background-color: #fc2408;
+  color: white;
+  border: none;
+}
+
+#section-publications .owl-carousel .publication-carousel-item:hover {
+  -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#section-publications .view-more-button {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-publications .view-more-button .view-more {
+  color: white;
+  padding: 10px 20px;
+  background-color: #ff371d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#section-publications .view-more-button .view-more:hover {
+  background-color: #cc2712;
 }
 /*# sourceMappingURL=style.css.map */
